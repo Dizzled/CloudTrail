@@ -9,7 +9,7 @@ secret_key = os.environ.get('AWS_SECRET_ACCESS_KEY')
 region = 'us-east-1'
 
 # Specify the AWS CloudTrail name
-trail_name = 'my-cloudtrail'
+trail_name = input("Enter the name of the CloudTrail: ")
 
 # Specify the pattern for each sensitive data type
 access_key_pattern = re.compile(r'AKIA[0-9A-Z]{16}')
